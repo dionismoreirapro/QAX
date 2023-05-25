@@ -1,0 +1,16 @@
+const { MongoClient } = require("mongodb");
+const mongoUri =
+  "mongodb+srv://dionismoreira:193264@cluster0.ltjnw1v.mongodb.net/markdb?retryWrites=true&w=majority";
+const client = new MongoClient(mongoUri);
+
+async function connect() {
+  await client.connect();
+
+  return client.db("markdb");
+}
+
+async function disconnect() {
+  await client.disconnect();
+}
+
+module.exports = { connect, disconnect };
