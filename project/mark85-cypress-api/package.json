@@ -1,0 +1,15 @@
+{
+  "name": "mark85-cypress-api",
+  "version": "1.0.0",
+  "description": "Projeto de teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "author": "Dionis Moreira",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.12.0",
+    "mongodb": "^5.5.0"
+  }
+}
